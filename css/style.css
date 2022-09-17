@@ -30,7 +30,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--hover-color);
 }
@@ -51,6 +51,12 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--main-color);
+}
+.header-link.current {
+  color: var(--hover-color);
+}
+.header-link-portfolio.current {
+  color: var(--hover-color);
 }
 
 .header-mail {
@@ -125,14 +131,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-hero-color);
-}
-.main-hero-btn:hover {
-  background: var(--background-color-btn);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-.main-hero-btn:focus {
-  background: var(--background-color-btn);
+  background: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
