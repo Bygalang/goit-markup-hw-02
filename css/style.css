@@ -10,11 +10,11 @@
   --studio-footer-color: #ffffff;
   --adress-link-color: #ffffff;
   --typical-line-height: 1.71;
+  --background-col-btn: #f5f4fa;
 }
 
-body {
+body {background-color: var(--body-backgrounf-color);
   font-family: 'Roboto', sans-serif;
-  background-color: var(--body-backgrounf-color);
 }
 
 .list {
@@ -25,6 +25,10 @@ body {
 }
 
 /*------------------Header------------*/
+.header{
+  background-color:var(--adress-link-color)
+}
+
 .header-logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -45,6 +49,9 @@ body {
   color: var(--studio-header-color);
 }
 
+.header-list {
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -59,14 +66,7 @@ body {
   color: var(--hover-color);
 }
 
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-color);
-}
-
+.header-mail,
 .header-tel {
   font-weight: 500;
   font-size: 14px;
@@ -75,40 +75,47 @@ body {
   color: var(--second-color);
 }
 
+
 .header-logo .studio-header:hover {
   color: var(--hover-color);
+  background-color: var(--adress-link-color);
 }
 .header-logo:focus {
   color: var(--hover-color);
+  background-color: var(--adress-link-color);
 }
 
-.header-link:hover {
-  color: var(--hover-color);
-}
+.header-link:hover,
 .header-link:focus {
   color: var(--hover-color);
+  background-color: var(--adress-link-color);
 }
-.header-mail:hover {
-  color: var(--hover-color);
-}
+ 
+.header-mail:hover,
 .header-mail:focus {
   color: var(--hover-color);
+  background-color: var(--adress-link-color);
 }
 
-.header-tel:hover {
-  color: var(--hover-color);
-}
+
+.header-tel:hover,
 .header-tel:focus {
   color: var(--hover-color);
+background-color: var(--adress-link-color);
 }
 
-.header-list {
+
+.header-list {b
 }
 
 .header-item {
 }
 
 /*---------------Main----------------*/
+.main{
+  background-color: var(--body-backgrounf-color);
+}
+
 .main-hero-title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -122,7 +129,7 @@ body {
   background-color: #2f303a;
 }
 .main-hero-btn {
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -131,10 +138,18 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-hero-color);
-  background: var(--hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  background-color: #2196f3;
+  cursor: pointer;
+
 }
+.main-hero-btn:hover{
+color: var(--hover-color);
+background-color: var(--adress-link-color);
+}
+.main-hero-btn:focus {
+  color: var(--adress-link-color);
+  background-color: var(--hover-color)
+  ;}
 
 /*---------------main-hero-------------*/
 
@@ -270,9 +285,11 @@ body {
 }
 .studio-footer:hover {
   color: var(--hover-color);
+  background-color: -;
 }
 .studio-footer:focus {
-  color: var(--hover-color);
+  color: var(--hover-color);background-color: var(--adress-link-color);
+
 }
 
 /*----------------Adress-----------------*/
@@ -288,16 +305,19 @@ body {
 }
 .adress-link:hover {
   color: var(--hover-color);
+  background-color: 
 }
-.adress-link:focus {
-  color: var(--hover-color);
+.adress-link:focus{
+  background-color: var(--hover-color);
 }
+
 .adress-list {
 }
 
 .adress-item {
 }
-.adress-mail-link {
+.adress-mail-link,
+.adress-tel-link  {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -308,11 +328,164 @@ body {
 }
 .adress-mail-link:hover {
   color: var(--hover-color);
+  background-color:
 }
 .adress-mail-link:focus {
-  color: var(--hover-color);
+  background-color: var(--hover-color);
 }
-.adress-tel-link {
+
+
+.adress-tel-link:hover
+ {
+  color: var(--hover-color);
+  background-color:
+}
+.adress-tel-link:focus{
+  background-color:var(--background-color-btn);
+}
+
+
+/*----------------Portfolio---------*/
+.body{
+  background-color: var(--second-color);
+}
+
+/*--------------- Header --------------*/
+.header-portfolio {
+  background-color:var(--adress-link-color)
+}
+
+.header-list-portfolio {
+}
+.header-item-portfolio {
+}
+.header-link-portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.header-mail-portfolio,
+.header-tel-portfolio{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+
+
+.header-link-portfolio:hover,
+.header-link-portfolio:focus {
+  color: var(--background-color-btn);
+  background-color: var(--adress-link-color);
+}
+
+.header-mail-portfolio:hover,
+.header-mail-portfolio:focus {
+  color: var(--hover-color);
+  background-color: var(--adress-link-color);
+}
+
+.header-tel-portfolio:hover,
+.header-tel-portfolio:focus {
+  color: var(--hover-color);
+  background-color: var(--adress-link-color);
+}
+/* ------------main----------- */
+
+.hero-portfolio {
+  background-color: var(--studio-footer-color);
+}
+
+.visually-hidden-top {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.hero-list-portfolio {
+}
+
+.hero-item-portfolio {
+}
+
+.button {
+  font-family: inherit, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background: var(--background-col-btn);
+  cursor: pointer;
+}
+.button:hover,:focus{
+  color: var(--adress-link-color);
+  background-color: var(--hover-color);
+}
+
+/* ------Картки----------- */
+
+.hero-list-button-portfolio {
+}
+.hero-list-button-item-portfolio {
+}
+.hero-title-portfolio {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: #212121;
+}
+.hero-text-portfolio {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1,87;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+/* ---------Footer-------- */
+
+.footer-portfolio {
+  background-color: var(--background-color-footer);
+}
+.footer-logo {
+}
+.studio-footer {
+}
+.adress-portfolio {
+}
+.adress-list-portfolio {
+}
+}
+.adress-item-portfolio {
+}
+.adress-link-portfolio {
+   font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: var(--typical-line-height);
+  letter-spacing: 0.03em;
+  color: var(--adress-link-color);
+}
+.adress-mail-link-portfolio,
+.adress-tel-link-portfolio {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -321,11 +494,27 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.adress-tel-link:hover {
+.adress-link-portfolio:hover {
   color: var(--hover-color);
+  background-color: 
 }
-.adress-tel-link:focus {
-  color: var(--hover-color);
+.adress-link-portfolio-:focus{
+  background-color: var(--hover-color);
 }
 
-/*---------------------Portfolio----------------*/
+.adress-mail-link-portfolio:hover {
+  color: var(--hover-color);
+  background-color:
+}
+.adress-mail-link-portfolio:focus {
+  background-color: var(--hover-color);
+}
+
+
+.adress-tel-link-portfolio:hover
+ {
+  color: var(--hover-color);
+  background-color:
+}
+.adress-tel-link-portfolio:focus{
+  background-color:var(--background-color-btn);
