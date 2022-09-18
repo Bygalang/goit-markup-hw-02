@@ -126,7 +126,7 @@ background-color: var(--adress-link-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-hero-color);
-  background-color: #2f303a;
+  background-color:var(--background-color-footer);
 }
 .main-hero-btn {
   font-family: inherit, sans-serif;
@@ -138,7 +138,7 @@ background-color: var(--adress-link-color);
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-hero-color);
-  background-color: #2196f3;
+  background-color:var(--background-color-btn);
   cursor: pointer;
 
 }
@@ -449,14 +449,14 @@ font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-color: #212121;
+color: var(--main-color)
 }
 .hero-text-portfolio {
   font-weight: 400;
 font-size: 16px;
-line-height: 1,87;
+line-height: 1.87;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--second-color)
 }
 
 /* ---------Footer-------- */
