@@ -14,7 +14,13 @@
 }
 
 body {background-color: var(--body-backgrounf-color);
-  font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 0.03em;
+   letter-spacing: 0.06em;
+   font-size: 14px;
+   color: var(--main-color);
+     background-color: var(--studio-footer-color);
+     letter-spacing: 0.03em;
 }
 
 .list {
@@ -32,20 +38,12 @@ body {background-color: var(--body-backgrounf-color);
 .header-logo {
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--hover-color);
 }
 
 .studio-header {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--studio-header-color);
 }
 
@@ -53,8 +51,7 @@ body {background-color: var(--body-backgrounf-color);
 }
 
 .header-link {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 500; 
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -66,24 +63,13 @@ body {background-color: var(--body-backgrounf-color);
   color: var(--hover-color);
 }
 
-.header-mail,
-.header-tel {
+.contact-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
 
-
-.header-logo .studio-header:hover {
-  color: var(--hover-color);
-  background-color: var(--adress-link-color);
-}
-.header-logo:focus {
-  color: var(--hover-color);
-  background-color: var(--adress-link-color);
-}
 
 .header-link:hover,
 .header-link:focus {
@@ -91,18 +77,14 @@ body {background-color: var(--body-backgrounf-color);
   background-color: var(--adress-link-color);
 }
  
-.header-mail:hover,
-.header-mail:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--hover-color);
   background-color: var(--adress-link-color);
 }
 
 
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--hover-color);
-background-color: var(--adress-link-color);
-}
+
 
 
 .header-list {b
@@ -115,10 +97,11 @@ background-color: var(--adress-link-color);
 .main{
   background-color: var(--body-backgrounf-color);
 }
+.hero{
+   background-color:var(--background-color-footer);
+}
 
-.main-hero-title {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -126,9 +109,9 @@ background-color: var(--adress-link-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-hero-color);
-  background-color:var(--background-color-footer);
+ 
 }
-.main-hero-btn {
+.hero-btn {
   font-family: inherit, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -142,7 +125,7 @@ background-color: var(--adress-link-color);
   cursor: pointer;
 
 }
-.main-hero-btn:hover{
+.hero-btn:hover{
 color: var(--hover-color);
 background-color: var(--adress-link-color);
 }
@@ -151,7 +134,7 @@ background-color: var(--adress-link-color);
   background-color: var(--hover-color)
   ;}
 
-/*---------------main-hero-------------*/
+/*---------------work-------------*/
 
 .visually-hidden {
   position: absolute;
@@ -166,96 +149,49 @@ background-color: var(--adress-link-color);
   margin: -1px;
 }
 
-.hero-list {
+.work-list {
 }
-.hero-item {
+.work-item {
 }
-.hero-title-third {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-color);
+.work-title {
 }
-.hero-text-one {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: var(--typical-line-height);
-  letter-spacing: 0.03em;
-  color: var(--second-color);
-}
-.hero-text-two {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: var(--typical-line-height);
-  letter-spacing: 0.03em;
-  color: var(--second-color);
-}
-.hero-text-three {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: var(--typical-line-height);
-  letter-spacing: 0.03em;
-  color: var(--second-color);
-}
-.hero-text-for {
-  font-weight: 400;
-  font-size: 14px;
+.work-text{
   line-height: var(--typical-line-height);
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
 
-/*---------------Hero-work--------------------*/
-.hero-work-title {
-  font-family: 'Roboto';
-  font-style: normal;
+
+/*---------------Practical-------------------*/
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
+  
 }
-.hero-work-list {
+.practical-list {
 }
-.hero-work-item {
+.practical-item {
 }
 
 /*-------------Hero-Team--------------*/
-.hero-team-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
+
+.team-list {
 }
-.hero-team-list {
+.team-item {
 }
-.hero-team-item {
-}
-.hero-team-title-third {
+.team-name{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
+
 }
-.hero-team-text {
-  font-weight: 400;
+.team-position {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-color);
 }
 
@@ -275,80 +211,34 @@ background-color: var(--adress-link-color);
 }
 
 .studio-footer {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--studio-footer-color);
 }
-.studio-footer:hover {
-  color: var(--hover-color);
-  background-color: -;
-}
-.studio-footer:focus {
-  color: var(--hover-color);background-color: var(--adress-link-color);
 
-}
 
 /*----------------Adress-----------------*/
 
 .adress-link {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: var(--typical-line-height);
-  letter-spacing: 0.03em;
   color: var(--adress-link-color);
-}
-.adress-link:hover {
-  color: var(--hover-color);
-  background-color: 
-}
-.adress-link:focus{
-  background-color: var(--hover-color);
 }
 
 .adress-list {
 }
-
 .adress-item {
 }
-.adress-mail-link,
-.adress-tel-link  {
-  font-family: 'Roboto';
+.footer-contacts-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: var(--typical-line-height);
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.adress-mail-link:hover {
-  color: var(--hover-color);
-  background-color:
-}
-.adress-mail-link:focus {
-  background-color: var(--hover-color);
-}
 
 
-.adress-tel-link:hover
- {
-  color: var(--hover-color);
-  background-color:
-}
-.adress-tel-link:focus{
-  background-color:var(--background-color-btn);
-}
+
 
 
 /*----------------Portfolio---------*/
-.body{
-  background-color: var(--second-color);
-}
+
 
 /*--------------- Header --------------*/
 .header-portfolio {
@@ -366,38 +256,30 @@ background-color: var(--adress-link-color);
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
+.header-link-portfolio:hover,
+.header-link-portfolio:focus { 
+  color: var(--hover-color);
+  background-color: var(--adress-link-color);}
 
-.header-mail-portfolio,
-.header-tel-portfolio{
+.contacts-portfolio {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
-
-
-.header-link-portfolio:hover,
-.header-link-portfolio:focus {
+.contacts-portfolio:hover,
+.contacts-portfolio:focus {
   color: var(--background-color-btn);
   background-color: var(--adress-link-color);
 }
 
-.header-mail-portfolio:hover,
-.header-mail-portfolio:focus {
-  color: var(--hover-color);
-  background-color: var(--adress-link-color);
-}
 
-.header-tel-portfolio:hover,
-.header-tel-portfolio:focus {
-  color: var(--hover-color);
-  background-color: var(--adress-link-color);
-}
+
 /* ------------main----------- */
 
 .hero-portfolio {
-  background-color: var(--studio-footer-color);
+
 }
 
 .visually-hidden-top {
@@ -420,7 +302,7 @@ background-color: var(--adress-link-color);
 }
 
 .button {
-  font-family: inherit, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -438,24 +320,17 @@ background-color: var(--adress-link-color);
 
 /* ------Картки----------- */
 
-.hero-list-button-portfolio {
+.project-list {
 }
-.hero-list-button-item-portfolio {
+.project-item{
 }
-.hero-title-portfolio {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
+.project-title {
 font-size: 18px;
 line-height: 2;
-letter-spacing: 0.06em;
-color: var(--main-color)
 }
-.hero-text-portfolio {
-  font-weight: 400;
-font-size: 16px;
+.project-text {
+ font-size: 16px;
 line-height: 1.87;
-letter-spacing: 0.03em;
 color: var(--second-color)
 }
 
@@ -464,57 +339,25 @@ color: var(--second-color)
 .footer-portfolio {
   background-color: var(--background-color-footer);
 }
-.footer-logo {
-}
-.studio-footer {
-}
+
 .adress-portfolio {
 }
 .adress-list-portfolio {
 }
-}
+
 .adress-item-portfolio {
 }
 .adress-link-portfolio {
-   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+   font-style: normal;
   font-size: 14px;
   line-height: var(--typical-line-height);
-  letter-spacing: 0.03em;
   color: var(--adress-link-color);
 }
-.adress-mail-link-portfolio,
-.adress-tel-link-portfolio {
-  font-family: 'Roboto';
+.adress-contact-link-portfolio
+{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: var(--typical-line-height);
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.adress-link-portfolio:hover {
-  color: var(--hover-color);
-  background-color: 
-}
-.adress-link-portfolio-:focus{
-  background-color: var(--hover-color);
-}
-
-.adress-mail-link-portfolio:hover {
-  color: var(--hover-color);
-  background-color:
-}
-.adress-mail-link-portfolio:focus {
-  background-color: var(--hover-color);
-}
-
-
-.adress-tel-link-portfolio:hover
- {
-  color: var(--hover-color);
-  background-color:
-}
-.adress-tel-link-portfolio:focus{
-  background-color:var(--background-color-btn);
