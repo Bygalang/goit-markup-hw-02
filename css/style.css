@@ -175,8 +175,10 @@ background-color: var(--adress-link-color);
 .practical-item {
 }
 
-/*-------------Hero-Team--------------*/
-
+/*-------------Team--------------*/
+.team{
+  background-color: var(--background-col-btn);
+}
 .team-list {
 }
 .team-item {
